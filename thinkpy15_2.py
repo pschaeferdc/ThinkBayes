@@ -1,0 +1,25 @@
+import copy
+
+class Point(object):
+    '''Represents a point in 3d space'''
+
+class Rectangle(object):
+    '''Represents a rectangle.
+    
+    attributes: width, height, corner
+    '''
+
+box = Rectangle()
+box.width = 100.0
+box.height = 200.0
+box.corner = Point()
+box.corner.x = 0.0
+box.corner.y = 0.0
+
+def move_rectangle(rect, dx, dy):
+    rect.corner.x +=5
+    rect.corner.y +=5
+    #print (rect, dx, dy)
+
+move_rectangle(box, 5,5)
+print(box.corner.x, box.corner.y)
